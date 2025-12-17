@@ -90,3 +90,10 @@
              (if (ElementOf $x $Ret)
                  (Unique $rest $Ret)
                  (Unique $rest (TupleConcat ($x) $Ret))))))
+
+
+
+
+; used for testing framework
+(= (CompareConclusion $TvIs $TvShould $Term)
+   ((TvIs: $Is) (TvShould: $Should) (Term: $Term)))
