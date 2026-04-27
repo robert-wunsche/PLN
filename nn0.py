@@ -59,12 +59,12 @@ device = torch.device(dev)
 
 dimHidden = 25
 
-dimHidden = 60
+#dimHidden = 25
 
 
-modelDed = M0(6, dimHidden, 2)
+modelDed = M0(4, dimHidden, 2)
 
-modelDed.load_state_dict(torch.load('modelDed.pth', weights_only=True))
+modelDed.load_state_dict(torch.load('tvfnModelDed.torchmodel', weights_only=True))
 
 def nnDed(v0, v1, v2, v3):
     t0 = [v0, v1, v2, v3]
